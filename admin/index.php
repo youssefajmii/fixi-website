@@ -1,0 +1,2 @@
+<?php
+require_once __DIR__.'/../config/bootstrap.php';require_login();if(current_user()['type']!=='admin')redirect('../auth/login.php');$pageTitle='Administration';require __DIR__.'/../includes/header.php';?><main class="container py-5"><span class="eyebrow">ADMINISTRATION</span><h1 class="page-title">Administration FIXI</h1><p class="text-secondary">Espace réservé à l'administrateur.</p><a href="../auth/logout.php" class="btn btn-outline-secondary">Déconnexion</a></main><?php require __DIR__.'/../includes/footer.php';?>

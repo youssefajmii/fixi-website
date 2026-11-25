@@ -1,0 +1,6 @@
+shedliajmi345@gmail.com
+http://localhost/FIXI/auth/verify.php?token=cfef1b46c334f9933849f6d02c1dcbc120e24b58185986947b4f38cd88edf11e
+
+youssefajmi79@gmail.com
+http://localhost/FIXI/auth/verify.php?token=e373645565039f2f5d84be9253a9dd98f399b02a20efcde156f2900025087f5b
+

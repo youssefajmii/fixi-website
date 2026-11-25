@@ -1,0 +1,53 @@
+:root {
+    --fixi-orange: #ff7900;
+    --fixi-red: #f13b24;
+    --fixi-yellow: #ffb000;
+    --fixi-dark: #182126;
+    --fixi-muted: #68737a;
+    --fixi-light: #f6f7f8;
+}
+* { box-sizing: border-box; }
+body { color: var(--fixi-dark); font-family: Inter, "Segoe UI", Arial, sans-serif; background: #fff; }
+.brand-logo { width: 112px; height: 54px; object-fit: contain; }
+.nav-link { font-weight: 600; color: #39434a; }
+.nav-link:hover { color: var(--fixi-orange); }
+.btn-fixi { color: #fff; border: 0; font-weight: 700; background: linear-gradient(110deg, var(--fixi-red), var(--fixi-orange), var(--fixi-yellow)); }
+.btn-fixi:hover { color: #fff; filter: brightness(.96); transform: translateY(-1px); }
+.hero-section { background: radial-gradient(circle at 85% 20%, #fff0df 0, transparent 34%), linear-gradient(180deg, #fff 0%, #fffaf5 100%); }
+.py-lg-6 { padding-top: 6rem; padding-bottom: 6rem; }
+.eyebrow { color: #e66a12; font-size: .75rem; font-weight: 800; letter-spacing: .13em; }
+.hero-title { font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.05; font-weight: 850; letter-spacing: -.055em; }
+.hero-title span { background: linear-gradient(100deg, var(--fixi-red), var(--fixi-orange), #eaa000); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero-text { color: var(--fixi-muted); font-size: 1.1rem; line-height: 1.8; max-width: 620px; }
+.search-panel { background: #fff; border: 1px solid #eceff1; border-radius: 18px; padding: 18px; box-shadow: 0 15px 45px rgba(24,33,38,.07); }
+.form-control { min-height: 46px; border-color: #e1e5e8; }
+.form-control:focus { border-color: var(--fixi-orange); box-shadow: 0 0 0 .2rem rgba(255,121,0,.12); }
+.hero-note { color: #788188; font-size: .85rem; }
+.hero-card { min-height: 350px; padding: 38px; border-radius: 28px; color: #fff; background: linear-gradient(145deg, #182126, #303b40); box-shadow: 0 25px 65px rgba(24,33,38,.18); display: flex; flex-direction: column; justify-content: flex-end; position: relative; overflow: hidden; }
+.hero-card:before { content: ""; position: absolute; width: 260px; height: 260px; border: 36px solid rgba(255,143,0,.22); border-radius: 50%; top: -95px; right: -65px; }
+.hero-card-icon { font-size: 3rem; margin-bottom: auto; position: relative; }
+.hero-card-label { color: #ffb35d; text-transform: uppercase; letter-spacing: .12em; font-size: .72rem; font-weight: 800; }
+.hero-card-title { font-size: 2.3rem; font-weight: 800; line-height: 1.15; margin-top: 10px; }
+.hero-card-line { width: 65px; height: 4px; border-radius: 5px; background: linear-gradient(90deg,var(--fixi-red),var(--fixi-yellow)); margin: 22px 0; }
+.section-heading { max-width: 680px; }
+.section-heading h2, .cta-title { font-weight: 800; letter-spacing: -.035em; margin-top: 8px; }
+.section-heading p { color: var(--fixi-muted); }
+.category-card { height: 100%; min-height: 150px; padding: 22px; display: flex; flex-direction: column; gap: 7px; text-decoration: none; color: var(--fixi-dark); border: 1px solid #e9edef; border-radius: 18px; transition: .2s; }
+.category-card:hover { border-color: #ffb36b; transform: translateY(-3px); box-shadow: 0 14px 30px rgba(24,33,38,.07); color: var(--fixi-dark); }
+.category-icon { font-size: 1.8rem; }
+.category-card small { color: var(--fixi-muted); }
+.how-section { background: var(--fixi-light); }
+.step-card { background: #fff; border: 1px solid #eceff1; border-radius: 18px; padding: 25px; height: 100%; }
+.step-card span { color: var(--fixi-orange); font-weight: 900; font-size: .85rem; }
+.step-card h3 { font-size: 1.25rem; font-weight: 800; margin-top: 18px; }
+.step-card p { color: var(--fixi-muted); margin-bottom: 0; line-height: 1.7; }
+.footer { border-top: 1px solid #edf0f2; background: #fff; }
+.page-title { font-weight: 850; letter-spacing: -.04em; }
+.empty-state { padding: 55px 20px; text-align: center; background: var(--fixi-light); border: 1px dashed #d9dfe2; border-radius: 20px; }
+.auth-card { max-width: 520px; padding: 32px; border: 1px solid #edf0f2; border-radius: 22px; box-shadow: 0 18px 50px rgba(24,33,38,.06); }
+.language-select { width: 78px; }
+@media (max-width: 767px) {
+    .py-lg-6 { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+    .hero-card { min-height: 280px; padding: 28px; }
+    .auth-card { padding: 23px; }
+}
